@@ -1,0 +1,7 @@
+!pip install gTTS
+from gtts import gTTS
+tts = gTTS(text='馬斯好棒棒快訂閱', lang='zh-tw')
+tts.save('hello.mp3')
+
+import IPython
+IPython.display.Audio("hello.mp3", autoplay=True)
